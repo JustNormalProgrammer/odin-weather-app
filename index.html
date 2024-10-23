@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  <script defer src="main.js"></script></head>
+
+  <body>
+    <div class="container">
+      <form action="#">
+        <input type="text" name="search" id="search" />
+        <fieldset>
+          <legend>Units:</legend>
+          <label for="metric">Metric</label>
+          <input
+            type="radio"
+            name="unit"
+            id="metric"
+            value="metric"
+            required
+            checked="checked"
+          />
+          <label for="us">US</label>
+          <input type="radio" name="unit" id="us" value="us" />
+        </fieldset>
+
+        <button type="submit">Submit</button>
+      </form>
+      <div class="card">
+        <div class="title"></div>
+        <div class="feels-like"></div>
+        <div class="info">
+          <div class="wind">
+            Prędkość wiatru:
+            <div class="wind-text"></div>
+          </div>
+          <div class="sub-info">
+            <div class="cloud-cover">
+              Zachmurzenie:
+              <div class="cloud-cover-text"></div>
+            </div>
+            <div class="pressure">
+              Ciśnienie:
+              <div class="pressure-text"></div>
+            </div>
+          </div>
+        </div>
+        <div class="sun-info">
+          Indeks UV:
+          <div class="uv-index"></div>
+          <div class="sun-hours">
+            <div class="sunrise txt-icon">
+              <img
+                class="sun-icon"
+                src="dd89a401b5dd7935bdd0.svg"
+                alt=""
+              />
+              <div class="sunrise-text"></div>
+            </div>
+            <div class="sunset txt-icon">
+              <img
+                class="sun-icon"
+                src="1470e11ea31d3ad8c5dc.svg"
+                alt=""
+              />
+              <div class="sunset-text"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
